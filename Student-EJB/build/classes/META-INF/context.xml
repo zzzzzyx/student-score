@@ -1,0 +1,6 @@
+<Context>
+  <Resource name="jdbc/venezia" auth="Container" type="javax.sql.DataSource"
+               maxIdle="30" maxWaitMillis="10000" logAbandoned="true" 
+               username="root" password="mypassword" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://private-database.zzzzzyx.com:3306/venezia?autoReconnect=true"/>
+</Context>

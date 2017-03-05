@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+  <!-- 持久化单元就是一些是实体bean的集合，事务目前为本地事务 -->
+	<persistence-unit name="student" transaction-type="RESOURCE_LOCAL">
+		<jta-data-source>java:/MySqlDS</jta-data-source>
+		<class>com.zzzzzyx.ejb.Student</class>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+		</properties>
+	</persistence-unit>
+</persistence>
